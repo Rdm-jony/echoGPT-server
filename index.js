@@ -6,7 +6,9 @@ require('dotenv').config()
 const axios = require('axios');
 
 
-app.use(cors())
+app.use(cors({
+    origin:['https://echogpt-aa3c7.web.app']
+}))
 app.use(express.json())
 
 
